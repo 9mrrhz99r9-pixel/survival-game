@@ -10,6 +10,43 @@
 <meta name="theme-color" content="#111416">
 <title>LAST SHELTER - 生存記録</title>
 <style>
+/* タブの並び方 */
+.section-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  margin: 12px 0;
+  padding-bottom: 6px;
+}
+
+/* タブのボタン */
+.section-tab {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border: 1px solid #51483e;
+  border-radius: 6px;
+  background: #211f1c;
+  color: #c8c0b2;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* 選択中のタブ */
+.section-tab.active {
+  background: #66543b;
+  border-color: #b89a68;
+  color: #fff1d2;
+}
+
+/* 選択されていないパネルを隠す */
+.tab-panel {
+  display: none;
+}
+
+/* 選択中のパネルを表示 */
+.tab-panel.active {
+  display: block;
+}
 :root{--bg:#111416;--panel:#1b2022;--panel2:#23292b;--line:#485052;--text:#e4e2d8;--muted:#a8ada9;--accent:#c2a879;--danger:#a85e54;--good:#789879}
 *{box-sizing:border-box}
 body{margin:0;background:#0d1011;color:var(--text);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:14px;line-height:1.45}
